@@ -4,4 +4,6 @@
 
 [Link zum Projekt](https://github.com/DBsMOJO/SYP-DinoBook/blob/main/SYP-DinoBook.md)
 
-[Lint zum UseCaseDiagram](https://github.com/DBsMOJO/SYP-DinoBook/blob/main/UseCaseDiagramm.png)
+[Link zum UseCaseDiagram](https://github.com/DBsMOJO/SYP-DinoBook/blob/main/UseCaseDiagramm.png)
+
+[Link zum ActivityDiagram](https://github.com/DBsMOJO/SYP-DinoBook/blob/main/ActivityDiagram.md)
