@@ -2,13 +2,15 @@
 
 Der CCC kann jederzeit das Projekt stilllegen.
 
-```mermaid
----
-title: Projekt stilllegen
----
-stateDiagram
-
-[*] --> Projekt_stilllegen
-Projekt_stilllegen --> [*]
+```plantuml
+@startuml
+start
+if (CCC entscheiden das\nProjekt stillzulegen) then (ja)
+    :Projekt stillgelegt;
+else
+    :Projekt aktiv;
+endif;
+stop
+@enduml
 ```
 
