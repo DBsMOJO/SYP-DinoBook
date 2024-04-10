@@ -1,0 +1,32 @@
+@startuml
+start
+:CCC entscheidet über
+Projektteilnahmer;
+if (bestehendes Mitglied?) then (ja)
+    :Projektteilnehmer
+    disqualifizieren;
+else
+    :neuen Projektteilnehmer
+    inizialisieren;
+    if (Initiative vom Projektleiter) then (ja)
+    else
+        :Anfrage vom User;
+        endif;
+        if (Anfrage bestätigt) then (ja)
+            :Neues Teammitglied
+            hinzufügen;
+        else
+            fork
+                :Absage
+                bekanntgegeben;
+            fork again
+                :⏳ Warteschleife
+                (2 Wochen);
+                note left: bei fehlender\nBenachrichtigung
+            end fork
+            :Anfrage löschen;
+            :Kein neues Teammitglied;
+            endif;
+            endif;
+            stop
+            @enduml
