@@ -1,0 +1,32 @@
+@startuml
+"Chief-Contant-Creator" as ccc
+
+ccc --> (verwalten von\nInhalten) : include
+ccc --> (Kommunikation) : include
+ccc --> (Teilnehmerverwalten) : include
+
+(verwalten von\nInhalten) --> (stilllegen) : extend
+(verwalten von\nInhalten) --> (löschen) : extend
+(verwalten von\nInhalten) --> (Flags bereitstellen) : extend
+(verwalten von\nInhalten) --> (prioritäre\nPinwandeinträge) : extend
+
+
+(stilllegen) --> (Postings) : extend
+(stilllegen) --> (Projektteilnehmer\nKommentare) : extend
+
+(löschen) --> (Beitragskommentare) : extend
+
+(Flags bereitstellen) --> (Postings)
+
+(prioritäre\nPinwandeinträge) --> (Projektpinwand) : extend
+
+
+(Kommunikation) --> (Chatfunktion) 
+(Kommunikation) --> (prioritäre\nPinwandeinträge)
+
+(Projektpinwand)
+(Postings)
+(Projektteilnehmer\nKommentare)
+(Beitragskommentare)
+
+@enduml
